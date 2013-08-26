@@ -285,4 +285,16 @@ function string_limit_words($string, $word_limit)
   return implode(' ', $words);
 }
 //End Limit word
+
+//Link Logo Admin Page
+function wpc_url_login(){
+return "http://kaeljune.com/"; //
+}
+add_filter('login_headerurl', 'wpc_url_login');
+// Thay doi logo admin wordpress
+function login_css() {
+wp_enqueue_style( 'login_css', get_template_directory_uri() . '/css/login.css' ); // duong dan den file css moi
+}
+add_action('login_head', 'login_css');
 ?>
+

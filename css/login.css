@@ -1,0 +1,7 @@
+#login h1 a {
+background: url("../images/logo.png") no-repeat !important;
+margin-left: 2%;
+}
+body.login {background:#dddddd}
+.login #nav a, .login #backtoblog a {color:#fff!important;text-shadow:none;text-decoration:none}
+.login #nav a:hover, .login #backtoblog a:hover {color:#ccc!important;
