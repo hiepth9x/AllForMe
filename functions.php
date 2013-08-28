@@ -296,5 +296,9 @@ function login_css() {
 wp_enqueue_style( 'login_css', get_template_directory_uri() . '/css/login.css' ); // duong dan den file css moi
 }
 add_action('login_head', 'login_css');
+
+//Custom post type
+require ('create-post-type.php');
+
 ?>
 
